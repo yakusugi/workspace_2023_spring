@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages={"com.example.bidget_tracker_spring"})
 @EnableJpaRepositories(basePackages = "com.example.budget_tracker_spring.repository")
 @EntityScan(basePackages = "com.example.budget_tracker_spring.entity")
 public class BudgetTrackerSpringApplication {
